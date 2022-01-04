@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
-interface Todo {
-  title: string;
-}
+import {Todo} from "@myorg/data";
 
 @Component({
   selector: 'myorg-root',
@@ -11,8 +8,6 @@ interface Todo {
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  static uniqueId = 3;
-
   todos: Todo[] = [];
 
   constructor(private httpClient: HttpClient) {
