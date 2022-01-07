@@ -6,10 +6,11 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { UiModule} from "@myorg/ui";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
-  imports: [BrowserModule, HttpClientModule, UiModule],
+  imports: [BrowserModule, HttpClientModule, UiModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
