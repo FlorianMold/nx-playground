@@ -8,6 +8,7 @@ import {Todo} from "@myorg/data";
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  title = 'My-app';
   todos: Todo[] = [];
 
   constructor(private httpClient: HttpClient) {

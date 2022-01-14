@@ -1,15 +1,12 @@
-import {Component, Input} from '@angular/core';
-import {Todo} from '@myorg/data';
-
+import { Component, Input } from '@angular/core';
+import { Todo } from '@myorg/data';
 
 @Component({
   selector: 'myorg-todo',
   templateUrl: './todo.component.html',
-  styleUrls: ['./todo.component.css']
+  styleUrls: ['./todo.component.css'],
 })
-export class TodoComponent  {
+export class TodoComponent {
   @Input() todos: Todo[] = [];
-
-  constructor() { }
 
 }
